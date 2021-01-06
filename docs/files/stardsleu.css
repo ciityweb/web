@@ -1,0 +1,801 @@
+/* Extras */
+
+.pull-left-force{
+float: left!important;
+text-align: left!important;
+}
+
+.pull-right-force{
+float: right!important;
+text-align: right!important;
+}
+
+
+/*Top Bar
+------------------------------------*/
+.top {
+	padding-top: 8px;
+}
+
+.top ul.loginbar {
+	margin: 0;
+	padding: 0;
+	z-index: 9999;
+	position: relative;
+}
+
+.top ul.loginbar > li {
+	display: inline;
+	list-style: none;
+	padding-bottom: 15px;
+}
+
+.top ul.loginbar > li > a,
+.top ul.loginbar > li > a:hover {
+	color: #4e4e4e;
+	font-size: 11px;
+	text-transform: uppercase;
+	font-family: Arial, sans-serif;
+}
+
+.top ul.loginbar li.devider {
+	top: -1px;
+	padding: 0;
+	font-size: 8px;
+	position: relative;
+	margin: 0 9px 0 5px;
+	font-family: Tahoma;
+	border-right: solid 1px #bbb;
+}
+
+.top ul.loginbar li i.icon-globe {
+	color: #bbb;
+}
+
+/*Header Default
+------------------------------------*/
+.header {
+	z-index:999;
+	position:relative;
+	border-bottom:solid 2px #eee;
+}
+
+.header .navbar {
+	margin: 0;
+	min-height: inherit;
+}
+
+.header .navbar-default {
+	border: none;
+	/* background: none; */
+}
+
+.header .navbar-collapse {
+	position: relative;
+	/*max-height: inherit;*/
+}
+
+/*Brand*/
+.header .navbar-brand {
+	z-index: 2;
+	position: relative;
+	padding: 0 10px 10px;
+}
+
+/*Navbar*/
+.header .navbar-default .navbar-nav > li > a {
+	color: #687074;
+	font-size: 15px;
+	font-weight:400;
+	padding: 9px 20px;
+	text-transform: uppercase;
+}
+
+.header .navbar-default .navbar-nav > .active > a {
+	color: #ff0066;
+}
+
+/*Dropdown*/
+.header .navbar-right .dropdown-menu {
+	right: inherit;
+}
+
+.header .navbar .nav > li > a i.icon-angle-down {
+	top: -1px;
+	left: 1px;
+	font-size: 12px;
+	position: relative;
+	margin: 0 !important;
+}
+
+/*Navber Toggle*/
+.navbar-toggle,
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+	background: #72c02c;
+}
+
+.navbar-toggle:hover {
+	background: #5fb611 !important;
+}
+
+.navbar-default .navbar-toggle {
+	border-color: #5fb611;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+	background: #fff;
+}
+
+
+
+
+
+
+
+/*Responsive @Media
+------------------------------------*/
+@media (min-width: 767px) {
+	/*Navbar Collapse*/
+	.header .navbar-collapse {
+		padding: 0;
+	}
+
+	/*Navbar*/
+	.header .navbar-nav {
+		top: 2px;
+		margin-top: 10px;
+		position: relative;
+	}
+
+	.header .navbar-default .navbar-nav > li > a,
+	.header .navbar-default .navbar-nav > li > a:focus {
+		border-bottom: solid 2px transparent;
+	}
+
+	.header .navbar-default .navbar-nav > li > a:hover,
+	.header .navbar-default .navbar-nav > .active > a {
+		border-bottom: solid 2px #ff6600;
+	}
+
+	.header .navbar-default .navbar-nav > li > a,
+	.header .navbar-default .navbar-nav > li > a:hover,
+	.header .navbar-default .navbar-nav > li > a:focus,
+	.header .navbar-default .navbar-nav > .active > a,
+	.header .navbar-default .navbar-nav > .active > a:hover,
+	.header .navbar-default .navbar-nav > .active > a:focus {
+		background: none;
+	}
+
+	.header .navbar-default .navbar-nav > .open > a,
+	.header .navbar-default .navbar-nav > .open > a:hover,
+	.header .navbar-default .navbar-nav > .open > a:focus {
+		color: #72c02c;
+	}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Extra colors */
+.orange-glyph{
+color:#ff6600;
+margin-right: 15px;
+}
+
+.grey-header{
+color: #727272;
+}
+/* List element reset */
+
+ul, ol{
+padding-left:15px;
+}
+
+div.col-md-5{
+margin-bottom: 10px;
+}
+
+
+/* Global Styles */
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+a {
+    outline: none !important;
+}
+.vert-text {
+  display: table-cell;
+  /* vertical-align: middle; */
+  text-align: center;
+}
+
+.vert-text h1 {
+  padding: 0;
+  margin: 0;
+  font-size: 4.5em;
+  font-weight: 700;
+}
+
+/* Side Menu */
+
+#sidebar-wrapper {
+  margin-right: -250px;
+  right: 0;
+  width: 250px;
+  background: #000;
+  position: fixed;
+  height: 100%;
+  overflow-y: auto;
+  z-index: 1000;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -ms-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+
+.sidebar-nav {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar-nav li {
+  line-height: 40px;
+  text-indent: 20px;
+}
+
+.sidebar-nav li a {
+  color: #999999;
+  display: block;
+  text-decoration: none;
+}
+
+.sidebar-nav li a:hover {
+  color: #fff;
+  background: rgba(255,255,255,0.2);
+  text-decoration: none;
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+  text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+  height: 55px;
+  line-height: 55px;
+  font-size: 18px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+  color: #999999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+  color: #fff;
+  background: none;
+}
+
+#menu-toggle {
+  top: 0;
+  right: 0;
+  position: fixed;
+  z-index: 1;
+}
+
+#sidebar-wrapper.active {
+  right: 250px;
+  width: 250px;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -ms-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+
+.toggle {
+  margin: 5px 5px 0 0;
+}
+
+/* Full Page Image Header Area */
+
+.header {
+  display: table;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  /* background: url(skyline_hg.png) no-repeat center center fixed; */
+  background: url(skyline_hg.png) repeat-x bottom center fixed;
+  /*
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  */
+
+}
+
+.header-form {
+  display: table;
+  width: 100%;
+  height: 450px;
+  position: relative;
+  background: url(skyline_top.jpg) no-repeat top 50px center fixed;
+}
+
+.header-sicherheit {
+  display: table;
+  width: 100%;
+  height: 450px;
+  position: relative;
+  background: url(service_top.jpg) no-repeat top 50px center fixed;
+
+}
+
+
+.header-sicherheit-sure {
+  display: table;
+  width: 100%;
+  height: 450px;
+  position: relative;
+  background: url(sicherheit_top.jpg) no-repeat top 50px center fixed;
+}
+
+
+.marg-h1 {
+    margin-top: 20px;
+}
+
+#weblogin{
+margin-top: 80px;
+margin-top: 120px;
+}
+
+.footermargin{
+margin-top: 100px;
+}
+
+
+
+/******************************************************************************
+* TEASER SLOGAN
+*******************************************************************************/
+#teaser-slogan {
+    margin: 50px 0;
+    margin-top:100px;
+}
+#teaser-font-big {
+    font-size: 25px;
+    color: #3F3F3F;
+}
+#teaser-font-small {
+    font-size: 25px;
+    color: #727272;
+}
+.teaser-font {
+    font-family: Arial,sans-serif;
+    line-height: 0.9;
+}
+/* Intro */
+
+.intro {
+  padding: 50px 0;
+}
+
+/* Services */
+
+.content{
+height: 400px;
+padding-top:100px;
+}
+
+.contenta{
+height: 800px;
+}
+
+
+
+
+
+.services {
+  background: #fff;
+  padding: 50px 0;
+  color: #4e4e4e;
+}
+
+.service-item {
+  margin-bottom: 15px;
+}
+
+i.service-icon {
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 56px;
+  width: 140px;
+  height: 140px;
+  line-height: 136px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+/* Callout */
+
+.callout {
+  color: #ffffff;
+  display: table;
+  height: 516px;
+  height:400px;
+  width: 100%;
+  background: url(skyline.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* Schutz */
+
+.schutz {
+  color: #ffffff;
+  display: table;
+  height: 516px;
+  height:400px;
+  width: 100%;
+  background: url(sicherheit.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* Schutz */
+
+.webmail {
+  color: #ffffff;
+  display: table;
+  height: 516px;
+  height: 400px;
+  width: 100%;
+  background: url(spam.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* Schutz */
+
+.support {
+  color: #ffffff;
+  display: table;
+  height: 516px;
+  height: 400px;
+  width: 100%;
+  background: url(service.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+
+/* Portfolio */
+
+.portfolio {
+  background: #a0b4dc;
+  padding: 50px 0;
+  color: #ffffff;
+}
+
+.portfolio-item {
+  margin-bottom: 25px;
+}
+
+.img-portfolio {
+  margin: 0 auto;
+}
+
+
+/* Call to Action */
+
+.call-to-action {
+  color: #ffffff;
+  background: #0a5175;
+  padding: 50px 0;
+}
+
+.call-to-action .btn {
+  margin: 10px;
+}
+
+/* Map */
+
+.map {
+  height: 500px;
+}
+
+/* Footer */
+
+footer {
+  padding: 0 0 100px 0;
+}
+
+.top-scroll {
+  margin-top: 50px;
+}
+
+.top-scroll a {
+  text-decoration: none;
+  color: inherit;
+}
+
+i.scroll {
+  color: #333333;
+}
+
+i.scroll:hover {
+  color: #0a5175;
+}
+
+/*******************************************************************************
+* BESTELLPROZESS
+*******************************************************************************/
+.help-block {
+    display: none;
+}
+.order-row:first-child {
+    margin-top: 50px;
+}
+.order-row {
+    margin: 10px 0;
+}
+input[type=text],
+input[type=password]{
+    background: #f4f4f4;
+    color: #ABABAB;
+    box-shadow: none;
+}
+p {
+    color: #727272;
+}
+.label-input {
+    font-weight: bold;
+}
+.invisible {
+    display: none;
+}
+#bestell-submit {
+    background: #FF6600;
+    color: #FFF;
+    padding: 10px;
+    border: none;
+}
+#submit-row,
+#agb-row {
+    margin-bottom: 50px;
+}
+.progress {
+  display: none;
+  margin: 20px 0 20px 0;
+}
+/*******************************************************************************
+* Radio/Checkboxes HACK
+*******************************************************************************/
+/*
+
+input[type=checkbox]:not(old),
+input[type=radio   ]:not(old){
+    width     : 2em;
+    margin    : 0;
+    padding   : 0;
+    font-size : 1em;
+    opacity   : 0;
+}
+
+input[type=checkbox]:not(old) + label,
+input[type=radio   ]:not(old) + label{
+    display      : inline-block;
+    margin-left  : -2em;
+    line-height  : 1.5em;
+}
+
+input[type=checkbox]:not(old) + label > span,
+input[type=radio   ]:not(old) + label > span{
+    display          : inline-block;
+    width            : 0.875em;
+    height           : 0.875em;
+    margin           : 0.25em 0.5em 0.25em 0.25em;
+    border           : 2px solid #333;
+    border-radius    : 0.875em;
+    background       : rgb(224,224,224);
+    vertical-align   : bottom;
+}
+
+
+input[type=checkbox]:not(old):checked + label > span:before{
+    content     : '';
+    display          : block;
+    width            : 0.875em;
+    height           : 0.875em;
+    border           : 0.0625em solid #333;
+    border-radius    : 0.875em;
+    background       : #333;
+    margin: -0.125em 0 0 -0.125em;
+}
+
+input[type=radio]:not(old):checked +  label > span > span{
+    display          : block;
+    width            : 0.875em;
+    height           : 0.875em;
+    margin           : 0.125em;
+    border           : 0.0625em solid #333;
+    border-radius    : 0.875em;
+    background       : #333;
+    margin: -0.125em 0 0 -0.125em;
+}
+
+*/
+
+
+input[type=checkbox]:not(old),
+input[type=radio   ]:not(old){
+    width     : 2em;
+    margin-top: 2px;;
+    padding-right: 5px;
+    padding-top: 5px;
+    margin-right: 5px;
+}
+
+
+
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+
+}
+
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+  .header {
+	/* background: url(bg.jpg) no-repeat center center scroll; */
+  }
+
+  .callout {
+	background: url(skyline_1100.jpg) no-repeat center center scroll;
+  }
+
+  /* Schutz */
+
+  .schutz {
+  background: url(sicherheit_1100.jpg) no-repeat center center fixed;
+  }
+
+  /* Schutz */
+
+  .webmail {
+  background: url(spam_1100.jpg) no-repeat center center fixed;
+  }
+
+  /* Schutz */
+
+  .support {
+  background: url(service_1100.jpg) no-repeat center center fixed;
+  }
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+
+
+  .header {
+	/* background: url(bg.jpg) no-repeat center center scroll; */
+  }
+
+  .callout {
+	background: url(sicherheit_1100.jpg) no-repeat center center scroll;
+  }
+
+  /* Schutz */
+
+  .schutz {
+  background: url(skyline_1100.jpg) no-repeat center center fixed;
+  }
+
+  /* Schutz */
+
+  .webmail {
+  background: url(spam_1100.jpg) no-repeat center center fixed;
+  }
+
+  /* Schutz */
+
+  .support {
+  background: url(service_1100.jpg) no-repeat center center fixed;
+  }
+
+
+  #weblogin{
+  margin-top: 120px;
+  }
+
+  .footermargin{
+  margin-top: 20px;
+  }
+
+
+
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+
+  .header {
+	/* background: url(bg.jpg) no-repeat center center scroll; */
+  }
+
+  .callout {
+	background: url(sicherheit_800.jpg) no-repeat center center scroll;
+  }
+
+  /* Schutz */
+
+  .schutz {
+  background: url(skyline_800.jpg) no-repeat center center fixed;
+  }
+
+  /* Schutz */
+
+  .webmail {
+  background: url(spam_800.jpg) no-repeat center center fixed;
+  }
+
+  /* Schutz */
+
+  .support {
+  background: url(service_800.jpg) no-repeat center center fixed;
+  }
+
+  #weblogin{
+  margin-top: 100px;
+  }
+
+  .footermargin{
+  margin-top: 20px;
+  }
+
+
+
+}
+
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+
+}
